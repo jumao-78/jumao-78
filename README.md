@@ -51,5 +51,5 @@ Python · FastAPI · SQLAlchemy · SQLite / PostgreSQL · OpenAI 兼容 LLM · P
 
 ## 📬 联系我
 
-- 📧 邮箱：（在这里填你的邮箱）
-- 💼 LinkedIn：（选填，在这里填你的主页）
+- 📧 邮箱：[3300486842@qq.com](mailto:3300486842@qq.com)
+- 📱 电话：13937217130
