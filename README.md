@@ -1,6 +1,6 @@
 # 👋 你好，我是 jumao-78
 
-> 全栈开发 / AI 应用开发者 · 专注用大模型构建能落地的业务系统：客服自动化、知识库问答、运营数据分析
+> 全栈开发 / AI 应用开发者 · 专注用大模型构建能落地的业务系统：客服自动化、知识库问答、运营数据分析、企业风险监测
 > （把“业务痛点 → 系统 + AI 需求”做成真能跑、能演示、有评测数字的产品）
 
 ---
@@ -31,6 +31,31 @@
 
 ---
 
+### 🏢 企业风险监测系统（Enterprise Risk Monitor）
+
+把分散在信用中国、企查查、地方黑名单里的企业风险，汇总成 **「一屏能看出问题」的结论**并留痕可追溯。原系统只有 9 页 PPT、无代码无手册，本项目在其基础上做 **增强重设计（非复刻）**：信息一项不少、版式重做，交付 6 页签高保真原型 + 四套工程文档 + 可复现取数管道。
+
+| | |
+|---|---|
+| ⚙️ 技术栈 | Python 3.12 · MySQL 8（独立实例 / 7 表）· pymysql · deepseek-flash · Playwright · ddddocr · APScheduler · smtplib(QQ SSL) |
+| 🖥 6 页签原型 | 总览 / 风险明细 / 取数任务 / AI 与邮件 / 配置 / 系统设置，桌面 + 移动双端；单文件原型零依赖，双击即开 |
+| 🧭 工程约束 | 取数**四态**而非布尔（`NO_RECORD` ≠ 无风险）· AI 只解读**不定级**（等级由 11 类规则映射，出参禁 `level`）· 徽章后端算、前端只渲染 · 状态单一来源 `task_record` · 演示标识强制常驻 |
+| 📄 文档体系 | 需求分析 / 技术选型 / 开发实施 / UI 设计说明书 v3.0 / 决策台账 / PRD，约 3 万字，每条结论可追溯到决策来源 |
+| 🔌 数据管道 | 信用中国批量查询 → 密云黑名单解析 → 快照归一化 → MySQL 入库；25 家真实名单 + 20 家脱敏演示名单 |
+| 🎯 设计取向 | 受众是「看结论的领导」与「排障的操作者」——取数链路、异常状态、数据来源全部显性化，不让空白格看起来像"没问题" |
+
+👉 **[查看项目仓库](https://github.com/jumao-78/enterprise-risk-monitor)** · [单文件原型](https://github.com/jumao-78/enterprise-risk-monitor/blob/main/%E4%BC%81%E4%B8%9A%E9%A3%8E%E9%99%A9%E7%9B%91%E6%B5%8B_%E5%8E%9F%E5%9E%8B%E6%B1%87%E6%80%BB.html) · [UI 设计说明书 v3.0](https://github.com/jumao-78/enterprise-risk-monitor/blob/main/%E4%BC%81%E4%B8%9A%E9%A3%8E%E9%99%A9%E7%9B%91%E6%B5%8B%E7%B3%BB%E7%BB%9F_UI%E8%AE%BE%E8%AE%A1%E8%AF%B4%E6%98%8E%E4%B9%A6_v3.0.md)
+
+![总览](https://raw.githubusercontent.com/jumao-78/enterprise-risk-monitor/main/docs/screenshots/overview.png)
+
+![风险明细](https://raw.githubusercontent.com/jumao-78/enterprise-risk-monitor/main/docs/screenshots/detail.png)
+
+<img src="https://raw.githubusercontent.com/jumao-78/enterprise-risk-monitor/main/docs/screenshots/mobile.png" width="260" alt="移动端总览" />
+
+> ⚠️ 本项目为**设计交付 + 可交互原型**，未上线；数据为 2026-10-21 快照而非实时抓取，页面常驻「演示模式」标识。企查查账号无查询权限，取数以 `no_permission` 显式暴露，不静默降级为"无风险"。
+
+---
+
 ### 🎨 UI 设计作品集
 
 15 页 UI 设计作品展示（界面设计 / 视觉稿 / 方案展示），由演示文稿逐页导出为高清图，另含 **UI 交互录屏演示**。
@@ -47,7 +72,7 @@
 
 ## 🛠 技术栈
 
-Python · FastAPI · SQLAlchemy · SQLite / PostgreSQL · OpenAI 兼容 LLM · Prompt 工程 · RAG（BM25 → 向量检索升级路径）· ECharts · Git / GitHub
+Python · FastAPI · SQLAlchemy · SQLite / PostgreSQL · OpenAI 兼容 LLM · Prompt 工程 · RAG（BM25 → 向量检索升级路径）· ECharts · MySQL · Playwright · Git / GitHub
 
 ## 📬 联系我
 
