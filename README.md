@@ -46,11 +46,25 @@
 
 👉 **[查看项目仓库](https://github.com/jumao-78/enterprise-risk-monitor)** · [单文件原型](https://github.com/jumao-78/enterprise-risk-monitor/blob/main/%E4%BC%81%E4%B8%9A%E9%A3%8E%E9%99%A9%E7%9B%91%E6%B5%8B_%E5%8E%9F%E5%9E%8B%E6%B1%87%E6%80%BB.html) · [UI 设计说明书 v3.0](https://github.com/jumao-78/enterprise-risk-monitor/blob/main/%E4%BC%81%E4%B8%9A%E9%A3%8E%E9%99%A9%E7%9B%91%E6%B5%8B%E7%B3%BB%E7%BB%9F_UI%E8%AE%BE%E8%AE%A1%E8%AF%B4%E6%98%8E%E4%B9%A6_v3.0.md)
 
+**总览** —— 4 张 KPI + 今日取数四段流水线 + 近七日趋势
+
 ![总览](https://raw.githubusercontent.com/jumao-78/enterprise-risk-monitor/main/docs/screenshots/overview.png)
 
-![风险明细](https://raw.githubusercontent.com/jumao-78/enterprise-risk-monitor/main/docs/screenshots/detail.png)
+| 风险明细 · 取数四态（`NO_RECORD` 单独成列） | 取数任务 · 双源并行 + 任务历史 |
+|---|---|
+| ![风险明细](https://raw.githubusercontent.com/jumao-78/enterprise-risk-monitor/main/docs/screenshots/detail.png) | ![取数任务](https://raw.githubusercontent.com/jumao-78/enterprise-risk-monitor/main/docs/screenshots/tasks.png) |
 
-<img src="https://raw.githubusercontent.com/jumao-78/enterprise-risk-monitor/main/docs/screenshots/mobile.png" width="260" alt="移动端总览" />
+| AI 与邮件 · 归档可追溯 + 主题带 `[演示]` | 配置 · 来源只读 + 密钥默认掩码 |
+|---|---|
+| ![AI](https://raw.githubusercontent.com/jumao-78/enterprise-risk-monitor/main/docs/screenshots/ai.png) | ![配置](https://raw.githubusercontent.com/jumao-78/enterprise-risk-monitor/main/docs/screenshots/config.png) |
+
+**系统设置** —— 6 项自检，把"企查查登录态失效"这类真实异常原样暴露，不粉饰
+
+![系统设置](https://raw.githubusercontent.com/jumao-78/enterprise-risk-monitor/main/docs/screenshots/setting.png)
+
+| 移动端 · 总览 | 移动端 · 风险明细 |
+|---|---|
+| <img src="https://raw.githubusercontent.com/jumao-78/enterprise-risk-monitor/main/docs/screenshots/mobile.png" width="200" alt="移动端总览" /> | <img src="https://raw.githubusercontent.com/jumao-78/enterprise-risk-monitor/main/docs/screenshots/mobile-detail.png" width="200" alt="移动端风险明细" /> |
 
 > ⚠️ 本项目为**设计交付 + 可交互原型**，未上线；数据为 2026-10-21 快照而非实时抓取，页面常驻「演示模式」标识。企查查账号无查询权限，取数以 `no_permission` 显式暴露，不静默降级为"无风险"。
 
