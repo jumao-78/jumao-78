@@ -21,11 +21,21 @@
 
 👉 **[查看项目仓库](https://github.com/jumao-78/logistics-copilot-workbench)** · 全部代码 / 评测报告 / 数据库切换指南 / 知识库管理指南
 
-![运营看板](https://raw.githubusercontent.com/jumao-78/logistics-copilot-workbench/main/docs/screenshots/dashboard.png)
+**工作台总览**
 
-![工单台](https://raw.githubusercontent.com/jumao-78/logistics-copilot-workbench/main/docs/screenshots/tickets.png)
+![工作台总览](https://raw.githubusercontent.com/jumao-78/logistics-copilot-workbench/main/docs/screenshots/01-dashboard.jpg)
 
-![知识库问答](https://raw.githubusercontent.com/jumao-78/logistics-copilot-workbench/main/docs/screenshots/qa.png)
+| 工单收件箱 | 知识库管理 |
+|---|---|
+| ![工单收件箱](https://raw.githubusercontent.com/jumao-78/logistics-copilot-workbench/main/docs/screenshots/02-inbox.jpg) | ![知识库管理](https://raw.githubusercontent.com/jumao-78/logistics-copilot-workbench/main/docs/screenshots/03-knowledge.jpg) |
+
+| 知识库问答 · 回答带【来源】标注 | Agent 流程 |
+|---|---|
+| ![知识库问答](https://raw.githubusercontent.com/jumao-78/logistics-copilot-workbench/main/docs/screenshots/04-knowledge-answer.jpg) | ![Agent 流程](https://raw.githubusercontent.com/jumao-78/logistics-copilot-workbench/main/docs/screenshots/05-agentflow.jpg) |
+
+| 运营看板 · 4 KPI + 近 7 日趋势 | 系统设置 |
+|---|---|
+| ![运营看板](https://raw.githubusercontent.com/jumao-78/logistics-copilot-workbench/main/docs/screenshots/06-analytics.jpg) | ![系统设置](https://raw.githubusercontent.com/jumao-78/logistics-copilot-workbench/main/docs/screenshots/07-settings.jpg) |
 
 > ⚠️ 本项目为演示项目，所有数据均为模拟数据（管道真实、数据为造），可在本地完全离线运行。
 
