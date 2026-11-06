@@ -29,7 +29,7 @@
 | 📊 运营看板 | 4 KPI + 近 7 日趋势 / 分类分布 / Top 意图 / 超时工单，指标全部 SQL 聚合，前端零写死数字 |
 | 🧪 评测背书 | 20 条人工标注集：分类准确率规则 100% / LLM 经两轮 Prompt 调优 40% → 95%+，字段提取幻觉 3 处 → 0 |
 
-👉 **[查看项目仓库](https://github.com/jumao-78/logistics-copilot-workbench)** · 全部代码 / 评测报告 / 数据库切换指南 / 知识库管理指南
+👉 **[在线演示](https://jumao-78.github.io/logistics-copilot-workbench/)** · **[查看项目仓库](https://github.com/jumao-78/logistics-copilot-workbench)** · 全部代码 / 评测报告 / 数据库切换指南 / 知识库管理指南
 
 **工作台总览**
 
@@ -47,7 +47,7 @@
 |---|---|
 | ![运营看板](https://raw.githubusercontent.com/jumao-78/logistics-copilot-workbench/main/docs/screenshots/06-analytics.jpg) | ![系统设置](https://raw.githubusercontent.com/jumao-78/logistics-copilot-workbench/main/docs/screenshots/07-settings.jpg) |
 
-> ⚠️ 本项目为演示项目，所有数据均为模拟数据（管道真实、数据为造），可在本地完全离线运行。
+> ⚠️ 本项目为演示项目，所有数据均为模拟数据（管道真实、数据为造），可在本地完全离线运行。在线演示是静态托管版：前端为真实构建产物，接口层在浏览器内存中复刻同一套规则引擎与知识检索，不连接 LLM；新建工单、改状态、知识库问答都可现场操作。
 
 ---
 
@@ -87,7 +87,7 @@ Vue 3 + TypeScript + Three.js + ECharts 构建的航运态势可视化大屏。1
 | 🔌 数据管道 | 信用中国批量查询 → 密云黑名单解析 → 快照归一化 → MySQL 入库；25 家真实名单 + 20 家脱敏演示名单 |
 | 🎯 设计取向 | 受众是「看结论的领导」与「排障的操作者」——取数链路、异常状态、数据来源全部显性化，不让空白格看起来像"没问题" |
 
-👉 **[查看项目仓库](https://github.com/jumao-78/enterprise-risk-monitor)** · [单文件原型](https://github.com/jumao-78/enterprise-risk-monitor/blob/main/%E4%BC%81%E4%B8%9A%E9%A3%8E%E9%99%A9%E7%9B%91%E6%B5%8B_%E5%8E%9F%E5%9E%8B%E6%B1%87%E6%80%BB.html) · [UI 设计说明书 v3.0](https://github.com/jumao-78/enterprise-risk-monitor/blob/main/%E4%BC%81%E4%B8%9A%E9%A3%8E%E9%99%A9%E7%9B%91%E6%B5%8B%E7%B3%BB%E7%BB%9F_UI%E8%AE%BE%E8%AE%A1%E8%AF%B4%E6%98%8E%E4%B9%A6_v3.0.md)
+👉 **[在线演示](https://jumao-78.github.io/enterprise-risk-monitor/)** · **[查看项目仓库](https://github.com/jumao-78/enterprise-risk-monitor)** · [单文件原型](https://github.com/jumao-78/enterprise-risk-monitor/blob/main/%E4%BC%81%E4%B8%9A%E9%A3%8E%E9%99%A9%E7%9B%91%E6%B5%8B_%E5%8E%9F%E5%9E%8B%E6%B1%87%E6%80%BB.html) · [UI 设计说明书 v3.0](https://github.com/jumao-78/enterprise-risk-monitor/blob/main/%E4%BC%81%E4%B8%9A%E9%A3%8E%E9%99%A9%E7%9B%91%E6%B5%8B%E7%B3%BB%E7%BB%9F_UI%E8%AE%BE%E8%AE%A1%E8%AF%B4%E6%98%8E%E4%B9%A6_v3.0.md)
 
 **总览** —— 4 张 KPI + 今日取数四段流水线 + 近七日趋势
 
@@ -109,7 +109,7 @@ Vue 3 + TypeScript + Three.js + ECharts 构建的航运态势可视化大屏。1
 |---|---|
 | <img src="https://raw.githubusercontent.com/jumao-78/enterprise-risk-monitor/main/docs/screenshots/mobile.png" width="200" alt="移动端总览" /> | <img src="https://raw.githubusercontent.com/jumao-78/enterprise-risk-monitor/main/docs/screenshots/mobile-detail.png" width="200" alt="移动端风险明细" /> |
 
-> ⚠️ 本项目为**设计交付 + 可交互原型**，未上线；数据为 2026-10-21 快照而非实时抓取，页面常驻「演示模式」标识。企查查账号无查询权限，取数以 `no_permission` 显式暴露，不静默降级为"无风险"。
+> ⚠️ 本项目为**设计交付 + 可交互原型**，已上线静态演示（非生产系统）；数据为 2026-10-21 快照而非实时抓取，页面常驻「演示模式」标识。企查查账号无查询权限，取数以 `no_permission` 显式暴露，不静默降级为"无风险"。
 
 ---
 
